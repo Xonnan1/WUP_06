@@ -46,7 +46,20 @@ This problem was a categorical categorical problem. We found out that the catego
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
 
+```{r}
+dd2 <- mydata %>% group_by(cappun,race) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
+
+# the group_by followed by summarize(count=n())
+
+basicC <- ggplot(dd2,aes(x=cappun,y=count,fill=race))
+basicC + geom_bar(stat="identity",position="dodge")
+
+#Now for percentage plot
+
+basicCC <- ggplot(dd2,aes(x=cappun,y=prcnt*100,fill=race)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
 
 ## Now with The Most data (fewer variables gives more data points)
 
@@ -56,8 +69,13 @@ This problem was a categorical categorical problem. We found out that the catego
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+table1 <- xtabs(~cappun + race, data=mydata)
+rowPerc(table1)
+colPerc(table1)
+```
 
-
+Of the people who favor capital punishment are almost 80% of white people, 11.72% of black people, and 8.47% of others. In the the opposing side, 65.38% of white people, 24.11% of black people, and 10.51% of others oppose of capital punishment.
 
 ## Now with More data
 
