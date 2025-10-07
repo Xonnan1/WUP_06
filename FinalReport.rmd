@@ -90,6 +90,11 @@ Of the people who favor capital punishment are almost 80% of white people, 11.72
 
 ## More data version
 
+```{r}
+fisherXY(mydata$race,mydata$cappun)
+```
+
+Statistically, every group is different from every group. With a low p-value for each of the groups. 
 
 # Discussion and Conclusion
 
