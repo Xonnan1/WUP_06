@@ -34,6 +34,8 @@ If not, then whose view differs from whom??
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
+This problem was a categorical categorical problem. We found out that the categorical of race, there was a factor of 3 levels. These were called "white", "black", and "others". "cappun" is a categorical variable with 2 levels which are in favor of capital punishment or oppose capital punishment. These were called "favor" and "oppose".
+
 # Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
