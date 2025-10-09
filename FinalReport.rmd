@@ -73,16 +73,21 @@ rowPerc(table2)
 colPerc(table2)
 ```
 
-The majority of white people favor capital punishments, with 67.75% favoring. Black people only favor 47.24% while the others favor 61.25%. Majority of Black people opposed captial punishment by 52.76%. White people only oppsed it by 32.25% and others by 38.75%.
+The majority of white people favor capital punishments, with 67.75% favoring. Black people only favor 47.24% while the others favor 61.25%. Majority of Black people opposed captial punishment by 52.76%. White people only opposed it by 32.25% and others by 38.75%.
 
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
 `
+```{r}
+fisherXY(mydata$cappun,mydata$race,printAll = TRUE)
+```
 
-
+In the inferential results the white people favor capital punishment more than the black and others. According to the fisher test the p-value of 0.000001741 with a large difference of a decision between white people. The ratio also determines that about 2.3 times the odd white people would vote for capital punishment while black people are against it. With the others the p-value 0.2565 showing little difference of the amount of people who favored or didn't favor capital punishment. Black people are more against than in favor.
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+
