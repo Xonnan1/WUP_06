@@ -52,14 +52,16 @@ dd2 <- mydata %>% group_by(cappun,race) %>% summarize(count=n()) %>% mutate(prcn
 
 # the group_by followed by summarize(count=n())
 
-basicC <- ggplot(dd2,aes(x=cappun,y=count,fill=race))
+basicC <- ggplot(dd2,aes(x=race,y=count,fill=cappun))
 basicC + geom_bar(stat="identity",position="dodge")
 
 #Now for percentage plot
 
-basicCC <- ggplot(dd2,aes(x=cappun,y=prcnt*100,fill=race)) 
+basicCC <- ggplot(dd2,aes(x=race,y=prcnt*100,fill=cappun)) 
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
+
+The white branch and the other branch are similar when it comes to capital punishment, because they support it. The black branch doesn't support it. When you combine both the red and blue cappun all the branches equal adds up to 100. 
 
 ## Now with The Most data (fewer variables gives more data points)
 
@@ -85,7 +87,7 @@ Of the people who favor capital punishment are almost 80% of white people, 11.72
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
-`
+
 
 
 ## More data version
@@ -99,3 +101,5 @@ Statistically, every group is different from every group. With a low p-value for
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+
