@@ -90,4 +90,4 @@ In the inferential results the white people favor capital punishment more than t
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-
+While this process was similar to the master branch the observations that were made showed the statistical difference between all values and just white and black. The amount of observations that were given between white and black people who voted were about 821. The p-value of 0.000001741 showed the major difference in votes for white people and the overall ratio of 2.3 that favored capital punishment than black people who weren't in favor.
