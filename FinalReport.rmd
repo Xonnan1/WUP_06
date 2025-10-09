@@ -102,4 +102,4 @@ Statistically, every group is different from every group. With a low p-value for
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-
+When observing the master branch we can see all of the data that relates to the branches and p-values of each group from white, black, and other. Overall this branch showcases the the white people and others favoring capital punishment by a large to little margin. Each branch also adds up to 100 after combing the cappun of favors and oppose. While this is more exact with the p-value of each group from large differences of 2.2e-16, 0.002607, and 0.001564 to ratios that are 2.5 to 1.5 times greater for white people while the others have odds of 0.6. As for number 2 branch it only has about 821 observations that only have the white and black ratios and p-values that are inherently different but nearly the same as the white still favor capital punishment just like the master branch does.
